@@ -52,7 +52,7 @@ app.registerExtension({
             }, 50);
             
             // ========== 设置节点尺寸 ==========
-            this.size = [420, 520];  // 默认节点尺寸 [宽, 高]
+            this.size = [420, 650];  // 默认节点尺寸 [宽, 高]
             this.serialize_widgets = true;  // 序列化控件状态
             
             // 禁止节点缩放 (避免标记点坐标偏移问题)
@@ -67,7 +67,7 @@ app.registerExtension({
          */
         nodeType.prototype.onResize = function() {
             // 强制保持固定尺寸
-            this.size = [420, 520];
+            this.size = [420, 650];
         };
         
         /**
@@ -126,7 +126,7 @@ app.registerExtension({
             
             // 定义容器尺寸 (用于坐标计算)
             this.CONTAINER_WIDTH = 400;   // 容器宽度
-            this.CONTAINER_HEIGHT = 250;  // 容器高度
+            this.CONTAINER_HEIGHT = 400;  // 容器高度
             
             // 创建图片预览容器
             const previewContainer = document.createElement("div");
